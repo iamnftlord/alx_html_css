@@ -224,8 +224,103 @@ body {
   .free-membership{
     background-color: #071629;
     text-align: center;
-    height: 70vh;
+    height: 80vh;
     color: #ffffff;
   }
 
+  .free-membership h2{
+    font-size: 30px;
+    font-weight: 350;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 200;
+  }
+
+  .free-membership h2 span{
+    color: #C271FF;
+    font-weight: 500;
+  }
+
+  .border-right{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-content: left;
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+
+  .free-membership button{
+    margin-top: 5rem;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #C271FF;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .faq{
+    text-align: center;
+    margin: 5rem 10rem;
+    background: #ffffff;
+    height: 100vh;
+  }
+
+  .faq-content{
+    display: flex;        /* makes children side by side */
+    gap: 10rem;         /* space between children */
+
+  }
+  .faq h2{
+    font-size: 30px;
+    font-weight: 350;
+    padding-bottom: 5rem;
+  }
+  .faq div h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: #0d0016;
+  }
+
+  .faq-text{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: #6d7075;
+    font-weight: 500;
+  }
+
+  .footer{
+    background-color: #071629;
+    height: 30vh;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+  }
+  .footer img{
+    height: 30px;
+    width: auto;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    font-size: 20px;
+    margin-left: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+    
+  }
   
