@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: space-between; /* space between logo and links */
   align-items: center;
-    padding: 20px 40px;  /* adjust padding as needed */
+  padding: 20px 40px;  /* adjust padding as needed */
 }
 
 /* Logo styling */
@@ -300,27 +300,61 @@ body {
 
   .footer{
     background-color: #071629;
-    height: 30vh;
+    height: 37vh;
     text-align: center;
     color: #ffffff;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 5rem;
   }
+
+  .footer-logo-social{
+    display: flex;
+    align-items: right;
+    gap: 50rem;;
+  }
+
   .footer img{
     height: 30px;
     width: auto;
+    margin-top: 5rem;
   }
 
   .social-icons {
     display: flex;
-    justify-content: right;
     gap: 1rem;
     font-size: 20px;
     margin-left: 1rem;
-    color: #ffffff;
     cursor: pointer;
+    margin-top: 5rem;
     
   }
-  
+
+  .copyrigt{
+    font-size: 14px;
+    font-weight: 300;
+    color: #6d7075;
+    margin: 5rem;
+  }
+
+
+
+
+
+
+  .popular-img-div{
+    position: relative;
+    display: inline-block;
+  }
+
+  .popular-img{
+   display: block;
+  }
+
+  .play-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8; /* Optional: makes the button slightly transparent */
+  }
