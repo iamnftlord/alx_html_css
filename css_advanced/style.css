@@ -174,7 +174,7 @@ body {
     text-align: left;
   }
 
-  .popular-tutorials-content div p{
+  .popular-tutorials-content div #paragraph{
     font-size: 14px;
     font-weight: 300;
     text-align: left;
@@ -356,5 +356,5 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.8; /* Optional: makes the button slightly transparent */
+    opacity: 0.8;
   }
