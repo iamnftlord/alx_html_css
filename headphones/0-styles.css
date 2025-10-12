@@ -1,0 +1,227 @@
+/* ===== CSS RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== CSS VARIABLES ===== */
+:root {
+    --primary-color: #FF6565;
+    --text-white: #FFFFFF;
+    --text-dark: #071629;
+    --max-width: 1000px;
+    --font-family: 'Source Sans Pro', sans-serif;
+    --font-family-heading: 'Spin Cycle OT', sans-serif;
+}
+
+/* ===== FONTS ===== */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spin Cycle OT';
+    src: url('fonts/SpinCycleOT.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ===== GENERAL STYLES ===== */
+body {
+    font-family: var(--font-family);
+    color: var(--text-white);
+    line-height: 1.6;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== BUTTON STYLES ===== */
+.btn {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 13px 31px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--text-white);
+}
+
+.btn:hover,
+.btn:active {
+    opacity: 0.9;
+}
+
+/* ===== HEADER STYLES ===== */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 28px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 161px;
+    height: auto;
+}
+
+/* ===== NAVIGATION ===== */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 41px;
+}
+
+.nav-link {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: var(--primary-color);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: url('images/headphones_hero_1.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    max-width: 637px;
+    margin: 0 auto;
+    padding-top: 312px;
+}
+
+.hero-title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 5px;
+}
+
+.hero-subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    margin-bottom: 65px;
+}
+
+.hero-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 637px;
+}
+
+/* ===== RESPONSIVE - MOBILE (480px and below) ===== */
+@media (max-width: 480px) {
+    /* Header Mobile */
+    .header {
+        padding: 20px 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    /* Hero Mobile */
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        padding-top: 250px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 12px 24px;
+    }
+}
